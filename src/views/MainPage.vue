@@ -1,6 +1,6 @@
 <template>
   <Drawer />
-  <div class="flex-col justify-between">
+  <div class="h-full">
     <div>
       <div class="chat chat-start">
         <div class="chat-image avatar">
@@ -35,11 +35,12 @@
         <div class="chat-footer opacity-50">Seen at 12:46</div>
       </div>
     </div>
-    <div class="join">
+
+    <div class="join w-full px-12">
       <input
         type="text"
         placeholder="Type here"
-        class="input input-bordered w-full"
+        class="input input-bordered w-full grow w-full"
       />
       <div class="indicator">
         <button class="btn join-item">Search</button>
@@ -52,6 +53,9 @@
 import Drawer from "../components/Drawer.vue";
 export default {
   components: { Drawer },
+  methods: {
+    sendMessage() {},
+  },
 };
 </script>
 
